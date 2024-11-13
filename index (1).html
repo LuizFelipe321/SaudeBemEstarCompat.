@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Saúde e Bem-Estar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="java.js">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Portal Saúde e Bem-Estar</h1>
+        <p>Cuide do seu bem-estar físico e mental</p>
+    </header>
+    
+    <section class="carousel">
+        <div class="carousel-slide active">Dicas para uma Vida Saudável</div>
+        <div class="carousel-slide">Cuidados com a Saúde Mental</div>
+        <div class="carousel-slide">Prevenção de Doenças</div>
+        <div class="carousel-controls">
+            <button onclick="previousSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="mental-health">
+        
+    <h2>Informações sobre Saúde Mental</h2>
+            
+    <div class="container" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+        <p>Práticas de Mindfulness <a href="PraticaMindfulness.html" target="_blank">Saiba mais</a></p>
+    </div>
+
+    <div class="container" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+        <p>Importância do Sono <a href="ImportanciaSono.html" target="_blank">Saiba mais</a></p> 
+    </div>
+                
+    <div class="container" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+        <p>Gerenciamento de Estresse <a href="GerenciamentoEstresse.html" target="_blank">Saiba mais</a></p>
+    </div>
+        
+    </section>
+    
+    <body>
+
+        <div class="container">
+            <h1>Saúde e Bem-Estar</h1>
+    
+            <table id="tabela-interativa">
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Tópico</th>
+                        <th>Descrição</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Saúde Física</td>
+                        <td>Alimentação equilibrada</td>
+                        <td>A alimentação balanceada é crucial para a saúde física e mental.</td>
+
+                        <a href="dica1.html" target="_blank"></a>
+                        <td><button onclick="toggleTip(this, 'alimentacao')">Dica Interativa</button>
+                            <p style="display: none;"></p> <!-- Texto oculto inicialmente -->
+                        </td>
+                    </a>
+
+                    </tr>
+                    <tr>
+                        <td>Saúde Física</td>
+                        <td>Atividade Física Regular</td>
+                        <td>Praticar exercícios melhora o humor e aumenta a energia.</td>
+
+                        <td>
+                        <a href="dica2.html" target="_blank"></a>
+                        <button onclick="toggleTip(this, 'atividade')">Dica Interativa</button>
+                            <p style="display: none;"></p> <!-- Texto oculto inicialmente -->
+                    </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Saúde Mental</td>
+                        <td>Mindfulness e Meditação</td>
+                        <td>Meditar por 10 minutos diários pode trazer grandes benefícios.</td>
+                        
+                        <a href="dica3.html" target="_blank"></a>
+                        <td><button onclick="toggleTip(this, 'meditacao')">Dica Interativa</button>
+                            <p style="display: none;"></p> <!-- Texto oculto inicialmente -->
+                        </td>
+                    </a>
+                    </tr>
+                    <tr>
+                        <td>Saúde Mental</td>
+                        <td>Gestão do Estresse</td>
+                        <td>Técnicas como respiração profunda ajudam a aliviar o estresse rapidamente.</td>
+                       
+                        <a href="dica4.html" target="_blank">
+                        <td><button onclick="toggleTip(this, 'estresse')">Dica Interativa</button>
+                            <p style="display: none;"></p> <!-- Texto oculto inicialmente -->
+                        </td>
+                        </a>
+                    </tr>
+                    <tr>
+                        <td>Bem-estar Emocional</td>
+                        <td>Gratidão e Positividade</td>
+                        <td>Praticar gratidão melhora o bem-estar e a mentalidade positiva.</td>
+
+                        <a href="dica5.html" target="_blank">
+                        <td><button onclick="toggleTip(this, 'gratidao')">Dica Interativa</button>
+                            <p style="display: none;"></p> <!-- Texto oculto inicialmente -->
+                        </td>
+                        </a>
+                    </tr>
+                    

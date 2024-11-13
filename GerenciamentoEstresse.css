@@ -1,0 +1,135 @@
+/* Estilo Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #42a5f5; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Carrossel de imagens */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    display: block;
+    opacity: 0;
+    animation: fadeEffect 3s forwards;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Seção Conceito de Estresse */
+.concept {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.concept h2 {
+    font-size: 2rem;
+    color: #42a5f5; /* Azul */
+}
+
+.concept p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Estatísticas */
+.statistics {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e3f2fd;
+}
+
+.statistics h2 {
+    color: #42a5f5;
+    font-size: 2rem;
+}
+
+.progress-container {
+    width: 80%;
+    background-color: #ddd;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #42a5f5;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Práticas e O que não fazer */
+.practices, .what-not-to-do {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.practices h2, .what-not-to-do h2 {
+    font-size: 2rem;
+    color: #42a5f5;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Rodapé */
+footer {
+    background-color: #42a5f5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}

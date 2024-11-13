@@ -1,0 +1,151 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00bfff; /* Azul claro */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    display: block;
+    opacity: 0;
+    animation: fadeEffect 3s forwards;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Informações */
+.information {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10%;
+}
+
+.information h2 {
+    color: #007bff; /* Azul escuro */
+    font-size: 2rem;
+}
+
+.information p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Dicas */
+.tips {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10%;
+    gap: 30px;
+}
+
+.good-tips, .bad-tips {
+    width: 48%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.good-tips {
+    background-color: #c8e6c9; /* Verde claro */
+}
+
+.bad-tips {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00bfff;
+    color: white;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+    overflow: hidden;  /* Para esconder as imagens não visíveis */
+}
+
+.carousel-slide {
+    display: none;  /* Inicia as imagens escondidas */
+    width: 100%;
+    transition: opacity 1s ease-in-out;  /* Transição suave */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Faz a animação de fade funcionar */
+.fade {
+    display: block;  /* Exibe a imagem */
+    opacity: 0;
+    animation: fadeEffect 3s forwards;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
